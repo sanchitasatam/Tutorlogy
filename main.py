@@ -4,16 +4,18 @@ import time
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Plus Ultra Logic System", page_icon="🚀", layout="centered")
 
-# --- CUSTOM CSS: MHA BACKGROUND CLASH ---
+# --- CUSTOM CSS ---
+# PASTE YOUR CHOSEN LINK IN THE URL() BELOW
 st.markdown("""
     <style>
     .stApp {
-        background-image: url("https://wallpaperaccess.com/full/1126131.jpg");
+        background-image: url("https://images6.alphacoders.com/997/thumb-1920-997829.jpg");
         background-size: cover;
+        background-position: center;
         background-attachment: fixed;
     }
 
-    /* Dark Overlay to make text readable */
+    /* Dark Overlay for Readability */
     .stApp::before {
         content: "";
         position: absolute;
@@ -21,38 +23,40 @@ st.markdown("""
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7); /* Darkens the image */
+        background-color: rgba(0, 0, 0, 0.75) !important; 
+        backdrop-filter: blur(2px);
         z-index: -1;
     }
     
-    /* Hero Red Buttons */
+    /* Hero Red Glow Buttons */
     div.stButton > button {
         background-color: #e63946 !important;
         color: white !important;
         font-weight: bold !important;
         border: 2px solid #f1faee !important;
         border-radius: 8px !important;
-        box-shadow: 0px 0px 15px rgba(230, 57, 70, 0.5) !important;
+        box-shadow: 0px 0px 20px rgba(230, 57, 70, 0.6) !important;
     }
 
-    /* White text for visibility */
+    /* White text with strong shadow */
     h1, h2, h3, p, span, label {
         color: #f1faee !important;
-        text-shadow: 1px 1px 2px #000000;
+        text-shadow: 2px 2px 8px #000000 !important;
     }
 
-    /* Transparent Content Box */
+    /* Transparent Logic Card */
     .stMarkdown, .stRadio, .stTextInput {
-        background: rgba(0, 0, 0, 0.4);
-        padding: 15px;
-        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
     }
     </style>
     """, unsafe_allow_html=True)
 
 # --- HEADER ---
 st.title("🚀 Plus Ultra Logic System")
-st.markdown("### *'Your dreams are yours. They are built on belief and not pressure.'*")
+st.markdown("### *'Go Beyond! Plus Ultra!'*")
 st.write("---")
 
 # --- INITIALIZE SESSION STATE ---
@@ -77,7 +81,7 @@ modules = [
         "question": "Triangle flips from Bottom to Top. Circle 'D' on Right moves to...?",
         "options": ["Stay Right", "Move to Left side", "Become a square"],
         "keywords": ["flip", "mirror", "left", "opposite", "reflect"],
-        "solution": "MOVE TO LEFT SIDE. Bridge: 'Reflection'. When you flip an image, right becomes left."
+        "solution": "MOVE TO LEFT SIDE. Bridge: 'Reflection'. When you flip an image horizontally, right becomes left."
     },
     {
         "type": "Numeric Logic",
@@ -110,25 +114,20 @@ if st.session_state.step < len(modules):
         if thought:
             duration = round(time.time() - st.session_state.start_time, 2)
             is_match = any(k in thought.lower() for k in current['keywords'])
-            
             st.session_state.logs.append({
-                "type": current['type'],
-                "choice": choice,
-                "reasoning": thought,
-                "duration": duration,
-                "status": "🌟 Success" if is_match else "🔧 Calibrated",
+                "type": current['type'], "choice": choice, "reasoning": thought,
+                "duration": duration, "status": "🌟 Success" if is_match else "🔧 Calibrated",
                 "solution": current['solution']
             })
             st.session_state.start_time = time.time()
             st.session_state.step += 1
             st.rerun()
         else:
-            st.error("Please provide your logic first!")
+            st.warning("State your logic, Hero!")
 
 else:
     st.balloons()
-    st.success("🏁 MISSION COMPLETE! PLUS ULTRA!")
-    st.write("## 🧠 Final Logic Lens Analysis")
+    st.success("🏁 MISSION COMPLETE!")
     for log in st.session_state.logs:
         with st.expander(f"🔍 {log['type']} - {log['status']} ({log['duration']}s)"):
             st.write(f"**Your Logic:** {log['reasoning']}")
