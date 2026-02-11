@@ -2,45 +2,42 @@ import streamlit as st
 import time
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="Plus Ultra Logic System", page_icon="🚀")
+st.set_page_config(page_title="Plus Ultra Logic System", page_icon="🚀", layout="centered")
 
-# --- CUSTOM CSS: MHA HERO ACADEMY THEME ---
+# --- FORCED MHA THEME (Stronger CSS) ---
 st.markdown("""
     <style>
+    /* Force the background gradient */
     .stApp {
-        background: linear-gradient(135deg, #0b0e14 0%, #1c2538 100%);
-        color: #FFFFFF;
+        background: linear-gradient(135deg, #0b0e14 0%, #1c2538 100%) !important;
     }
-    .stButton>button {
-        background-color: #e63946;
-        color: white;
-        font-weight: bold;
-        border: 2px solid #f1faee;
-        border-radius: 8px;
-        box-shadow: 0px 0px 15px rgba(230, 57, 70, 0.3);
-        width: 100%;
+    
+    /* Force Hero Red on all primary buttons */
+    div.stButton > button {
+        background-color: #e63946 !important;
+        color: white !important;
+        font-weight: bold !important;
+        border: 2px solid #f1faee !important;
+        border-radius: 8px !important;
+        box-shadow: 0px 0px 15px rgba(230, 57, 70, 0.4) !important;
     }
-    .stButton>button:hover {
-        background-color: #f1faee;
-        color: #e63946;
+
+    /* Change the text color to white for better contrast */
+    h1, h2, h3, p, span, label {
+        color: #f1faee !important;
     }
-    .stTextInput>div>div>input {
-        background-color: #262730;
-        color: #4cc9f0;
-        border: 1px solid #4cc9f0;
-    }
-    h1, h2, h3 { color: #f1faee !important; }
-    .streamlit-expanderHeader {
-        background-color: #161b22;
-        color: #4cc9f0 !important;
-        font-weight: bold;
+
+    /* Quirk Analysis box styling */
+    .stAlert {
+        background-color: rgba(76, 201, 240, 0.1) !important;
+        border: 1px solid #4cc9f0 !important;
     }
     </style>
     """, unsafe_allow_html=True)
 
 # --- HEADER ---
 st.title("🚀 Plus Ultra Logic System")
-st.markdown("### *'Your dreams are yours. They are built on belief and not pressure.Go beyond Plus Ultra!'*")
+st.markdown("### *'Your dreams are yours. They are built on belief and not pressure. Go beyond Plus Ultra!'*")
 st.write("---")
 
 # --- INITIALIZE SESSION STATE ---
@@ -112,7 +109,7 @@ if st.session_state.step < len(modules):
             st.session_state.step += 1
             st.rerun()
         else:
-            st.error("Please provide your logic first!")
+            st.error("The system needs your logic to analyze!")
 
 else:
     st.balloons()
