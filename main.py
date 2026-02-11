@@ -4,25 +4,43 @@ import time
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Plus Ultra Logic System", page_icon="🚀")
 
-# --- CUSTOM CSS: CRISP DARK MODE ---
+# --- CUSTOM CSS: MHA HERO ACADEMY THEME ---
 st.markdown("""
     <style>
-    .stApp { background-color: #0E1117; color: white; }
-    h1, h2, h3, p, label { color: #FFFFFF !important; }
-    .stButton>button { 
-        background-color: #FF4B4B; 
-        color: white; 
-        font-weight: bold; 
-        border-radius: 10px;
+    .stApp {
+        background: linear-gradient(135deg, #0b0e14 0%, #1c2538 100%);
+        color: #FFFFFF;
+    }
+    .stButton>button {
+        background-color: #e63946;
+        color: white;
+        font-weight: bold;
+        border: 2px solid #f1faee;
+        border-radius: 8px;
+        box-shadow: 0px 0px 15px rgba(230, 57, 70, 0.3);
         width: 100%;
     }
-    .stTextInput>div>div>input { background-color: #262730; color: white; }
+    .stButton>button:hover {
+        background-color: #f1faee;
+        color: #e63946;
+    }
+    .stTextInput>div>div>input {
+        background-color: #262730;
+        color: #4cc9f0;
+        border: 1px solid #4cc9f0;
+    }
+    h1, h2, h3 { color: #f1faee !important; }
+    .streamlit-expanderHeader {
+        background-color: #161b22;
+        color: #4cc9f0 !important;
+        font-weight: bold;
+    }
     </style>
     """, unsafe_allow_html=True)
 
 # --- HEADER ---
 st.title("🚀 Plus Ultra Logic System")
-st.markdown("### *'Your dreams are yours. They are built on belief and not pressure.'*")
+st.markdown("### *'Your dreams are yours. They are built on belief and not pressure.Go beyond Plus Ultra!'*")
 st.write("---")
 
 # --- INITIALIZE SESSION STATE ---
@@ -31,83 +49,71 @@ if 'step' not in st.session_state:
 if 'logs' not in st.session_state:
     st.session_state.logs = []
 if 'start_time' not in st.session_state:
-    st.session_state.start_time = time.time() # Start the clock for the first question
+    st.session_state.start_time = time.time()
 
-# --- THE CORE MODULES ---
+# --- THE 4 CORE MODULES ---
 modules = [
     {
         "type": "Verbal Logic",
         "question": "SPOKE : WHEEL :: STEP : ?",
         "options": ["Walk", "Staircase", "Shoe", "Run"],
         "keywords": ["form", "part", "piece", "staircase", "whole", "build"],
-        "hint": "Think of building blocks. How does the first piece fit the second?"
+        "solution": "STAIRCASE. Bridge: 'Part-to-Whole'. A spoke is a piece of a wheel; a step is a piece of a staircase."
     },
     {
         "type": "Figural Logic",
         "question": "Triangle flips from Bottom to Top. Circle 'D' on Right moves to...?",
-        "options": ["Stay Right/Upside down", "Move to Left side", "Become a square"],
-        "keywords": ["flip", "mirror", "left", "pancake", "opposite", "reflect"],
-        "hint": "Is it spinning like a wheel or flipping like a pancake?"
+        "options": ["Stay Right", "Move to Left side", "Become a square"],
+        "keywords": ["flip", "mirror", "left", "opposite", "reflect"],
+        "solution": "MOVE TO LEFT SIDE. Bridge: 'Reflection'. When you flip an image, right becomes left."
     },
     {
         "type": "Numeric Logic",
         "question": "2, 6, 18, 54, ?",
         "options": ["108", "162", "200"],
-        "keywords": ["multiply", "times", "x3", "3", "tripled", "growth"],
-        "hint": "Is the bridge between numbers adding or multiplying?"
+        "keywords": ["multiply", "times", "x3", "3", "growth"],
+        "solution": "162. Bridge: 'Multiplication'. Each number is multiplied by 3."
     },
     {
         "type": "Matrix Logic",
         "question": "Row 1: Circle -> Circle + Square. Row 2: Triangle -> ?",
         "options": ["Triangle + Square", "Just a Square", "Small Triangle"],
-        "keywords": ["inside", "fill", "square", "triangle", "middle", "add"],
-        "hint": "Look across the row. What 'filling' was added to the first shape?"
+        "keywords": ["inside", "fill", "square", "triangle", "add"],
+        "solution": "TRIANGLE + SQUARE. Bridge: 'Addition'. The rule is to add a square inside the primary shape."
     }
 ]
 
 # --- THE MENTOR INTERFACE ---
 if st.session_state.step < len(modules):
     current = modules[st.session_state.step]
+    st.progress(st.session_state.step / len(modules))
     
-    # Progress Bar
-    progress = st.session_state.step / len(modules)
-    st.progress(progress)
-    
-    st.info(f"**Current Scan:** {current['type']}")
+    st.info(f"⚡ **QUIRK ANALYSIS:** {current['type']}")
     st.write(f"### {current['question']}")
     
-    # User Input
-    choice = st.radio("Pick the best fit:", current['options'], key=f"r_{st.session_state.step}")
-    thought = st.text_input("How does your 'Logic Lens' see this? (Describe the bridge):", key=f"t_{st.session_state.step}")
+    choice = st.radio("Select your answer:", current['options'], key=f"r_{st.session_state.step}")
+    thought = st.text_input("Describe your 'Logic Lens':", key=f"t_{st.session_state.step}", placeholder="How did you find the bridge?")
 
-    if st.button("Submit Logic & Move Beyond"):
+    if st.button("GO BEYOND!"):
         if thought:
-            # Calculate Time Taken
-            end_time = time.time()
-            duration = round(end_time - st.session_state.start_time, 2)
-            
-            # NLP KEYWORD CHECKING
+            duration = round(time.time() - st.session_state.start_time, 2)
             is_match = any(key in thought.lower() for key in current['keywords'])
             
-            # Record Data
-            entry = {
+            st.session_state.logs.append({
                 "type": current['type'],
-                "question": current['question'],
                 "choice": choice,
                 "reasoning": thought,
                 "duration": duration,
-                "status": "🌟 Success" if is_match else "🔧 Calibrated"
-            }
-            st.session_state.logs.append(entry)
+                "status": "🌟 Success" if is_match else "🔧 Calibrated",
+                "solution": current['solution']
+            })
             
-            # Reset timer for next question
             st.session_state.start_time = time.time()
             st.session_state.step += 1
             st.rerun()
         else:
-            st.error("The system needs to hear your logic before moving on!")
+            st.error("Please provide your logic first!")
 
-# --- FINAL RESEARCH REPORT ---
 else:
     st.balloons()
     st.success("🏁 MISSION COMPLETE! PLUS ULTRA!")
@@ -115,13 +121,12 @@ else:
     
     for log in st.session_state.logs:
         with st.expander(f"🔍 {log['type']} - {log['status']} ({log['duration']}s)"):
-            st.write(f"**Question:** {log['question']}")
-            st.write(f"**Answer Picked:** {log['choice']}")
-            st.write(f"**Learner's Logic:** {log['reasoning']}")
-            st.write(f"**Time Spent:** {log['duration']} seconds")
+            st.write(f"**Your Logic:** {log['reasoning']}")
+            st.write(f"**Your Answer:** {log['choice']}")
+            st.divider()
+            st.info(f"🔑 **The Expert Bridge:**\n\n{log['solution']}")
             
-    if st.button("Restart System"):
+    if st.button("Restart Mission"):
         st.session_state.step = 0
         st.session_state.logs = []
-        st.session_state.start_time = time.time()
         st.rerun()
