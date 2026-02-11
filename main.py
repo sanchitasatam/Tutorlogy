@@ -89,7 +89,7 @@ modules = [
         "options": ["Stay Right", "Move to Left side", "Become a square"],
         "keywords": ["left", "mirror", "flip"],
         "solution": "MOVE TO LEFT SIDE. Bridge: 'Reflection'."
-    }
+    },
     {
         "type": "Numeric Logic",
         "question": "2, 6, 18, 54, ?",
