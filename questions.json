@@ -1,0 +1,722 @@
+[
+  {
+    "id": 1,
+    "type": "Verbal Reasoning",
+    "question": "A boat cannot pass through a canal without —",
+    "options": ["propellers", "a passage", "a warrant", "a captain"],
+    "answer": "a passage",
+    "hint": "Think about the space itself.",
+    "explanation": "A canal is defined as a passage.",
+    "keywords": ["passage", "opening", "space", "way"]
+  },
+  {
+    "id": 2,
+    "type": "Figural Analogy",
+    "question": "A square is to a triangle as a cube is to a —",
+    "options": ["circle", "line", "pyramid", "sphere"],
+    "answer": "pyramid",
+    "hint": "Think about the 3D version of a triangle.",
+    "explanation": "A triangle is the 2D version of a pyramid, just as a square is the 2D version of a cube.",
+    "keywords": ["3d", "pyramid", "dimension"]
+  },
+  {
+    "id": 3,
+    "type": "Logical Selection",
+    "question": "Roland was playing a computer game and the save was corrupted. What is the most logical explanation for his empire disappearing?",
+    "options": ["Ancient war", "Computer virus", "Natural disaster", "None"],
+    "answer": "Computer virus",
+    "hint": "In what world can a 'virus' make an entire 'empire' disappear instantly?",
+    "explanation": "A computer virus destroys digital data instantly.",
+    "keywords": ["computer", "game", "digital", "virus"]
+  },
+  {
+    "id": 4,
+    "type": "Verbal Analogy",
+    "question": "Boxer : Fists :: Marksman : ?",
+    "options": ["Spear", "Javelin", "Sling", "Rifle"],
+    "answer": "Rifle",
+    "hint": "What tool is a marksman famous for using?",
+    "explanation": "A boxer uses fists; a marksman uses a rifle.",
+    "keywords": ["rifle", "gun", "tool"]
+  },
+  {
+    "id": 5,
+    "type": "Number Matrix",
+    "question": "Row 1: 54, 78, 96 | Row 2: 9, 13, ?",
+    "options": ["15", "16", "17", "18"],
+    "answer": "16",
+    "hint": "Look at the first number in each row (54 and 9). Divide 54 by what?",
+    "explanation": "The rule is Row 1 ÷ 6 = Row 2. So, 96 ÷ 6 = 16.",
+    "keywords": ["divide", "six", "16"]
+  },
+  {
+    "id": 6,
+    "type": "Figural Series",
+    "question": "An arrow rotates 90 degrees clockwise in each step. What is the next position?",
+    "options": ["Up", "Down", "Left", "Right"],
+    "answer": "Right",
+    "hint": "Is the arrow moving clockwise or counter-clockwise?",
+    "explanation": "The arrow rotates 90 degrees clockwise in each step.",
+    "keywords": ["rotate", "clockwise", "90"]
+  },
+  {
+    "id": 7,
+    "type": "Sentence Completion",
+    "question": "Catherine's research into the embezzlement was so ______ that no one knew about it until the arrests.",
+    "options": ["Apparent", "Clandestine", "Usual", "Exaggerated"],
+    "answer": "Clandestine",
+    "hint": "If 'no one knew,' the work must have been kept very quiet.",
+    "explanation": "Clandestine means kept secret or done secretively.",
+    "keywords": ["secret", "hidden", "clandestine"]
+  },
+  {
+    "id": 8,
+    "type": "Arithmetic Reasoning",
+    "question": "If 4 workers can build a wall in 12 hours, how many workers are needed to build it in 4 hours?",
+    "options": ["8", "10", "12", "16"],
+    "answer": "12",
+    "hint": "To finish 3 times faster, do you need more or fewer workers?",
+    "explanation": "4 workers × 12 hours = 48 man-hours. 48 ÷ 4 = 12 workers.",
+    "keywords": ["multiply", "divide", "inverse"]
+  },
+  {
+    "id": 9,
+    "type": "Number Series",
+    "question": "2, 6, 18, 54, ?",
+    "options": ["108", "162", "200", "216"],
+    "answer": "162",
+    "hint": "How do you get from 2 to 6? Is it addition or multiplication?",
+    "explanation": "Each number is multiplied by 3. 54 × 3 = 162.",
+    "keywords": ["multiplication", "times", "3"]
+  },
+  {
+    "id": 10,
+    "type": "Verbal Analogy",
+    "question": "Spire is to church as minaret is to —",
+    "options": ["synagogue", "temple", "pagoda", "mosque"],
+    "answer": "mosque",
+    "hint": "A spire is a tall tower on a specific type of building.",
+    "explanation": "A spire is a tower on a church; a minaret is a tower on a mosque.",
+    "keywords": ["mosque", "building", "tower"]
+  },
+  {
+    "id": 11,
+    "type": "Verbal Classification",
+    "question": "Which of these does not belong with the others?",
+    "options": ["microscope", "magnifying glass", "telescope", "stethoscope"],
+    "answer": "stethoscope",
+    "hint": "Four help you SEE; one helps you HEAR.",
+    "explanation": "A stethoscope is an acoustic tool; the others are optical.",
+    "keywords": ["hear", "sound", "acoustic"]
+  },
+  {
+    "id": 12,
+    "type": "Arithmetic Reasoning",
+    "question": "If two pounds of apples cost $1.60, how much would five pounds cost?",
+    "options": ["$3.20", "$4.00", "$4.80", "$5.20"],
+    "answer": "$4.00",
+    "hint": "Find the price of just ONE pound first.",
+    "explanation": "$1.60 ÷ 2 = $0.80 per pound. $0.80 × 5 = $4.00.",
+    "keywords": ["multiply", "unit", "price"]
+  },
+  {
+    "id": 13,
+    "type": "Verbal Classification",
+    "question": "Which word does not belong?",
+    "options": ["foot", "kilometer", "kilogram", "yard"],
+    "answer": "kilogram",
+    "hint": "Which one measures weight instead of distance?",
+    "explanation": "Kilogram measures mass; the others measure length.",
+    "keywords": ["weight", "mass", "length"]
+  },
+  {
+    "id": 14,
+    "type": "Figural Analogy",
+    "question": "A circle is to a sphere as a square is to a —",
+    "options": ["cube", "triangle", "line", "point"],
+    "answer": "cube",
+    "hint": "Think about the 3D version of a square.",
+    "explanation": "A sphere is the 3D form of a circle; a cube is the 3D form of a square.",
+    "keywords": ["3d", "cube", "volume"]
+  },
+  {
+    "id": 15,
+    "type": "Logical Selection",
+    "question": "Which of the following is required to perform a play spontaneously?",
+    "options": ["improvising", "laughter", "recitals", "a script"],
+    "answer": "improvising",
+    "hint": "What do you call acting without a script?",
+    "explanation": "Improvising is the skill of acting without a plan.",
+    "keywords": ["script", "makeup", "improvisation"]
+  },
+  {
+    "id": 16,
+    "type": "Number Series",
+    "question": "80, 40, 44, 22, 26, ?",
+    "options": ["13", "10", "52", "30"],
+    "answer": "13",
+    "hint": "Divide by 2, then add 4.",
+    "explanation": "80/2=40; 40+4=44; 44/2=22; 22+4=26; 26/2=13.",
+    "keywords": ["divide", "add", "pattern"]
+  },
+  {
+    "id": 17,
+    "type": "Verbal Analogy",
+    "question": "Composer is to Symphony as Playwright is to —",
+    "options": ["Actor", "Theater", "Script", "Director"],
+    "answer": "Script",
+    "hint": "A composer 'creates' a symphony. What does a playwright 'create'?",
+    "explanation": "A playwright writes a script.",
+    "keywords": ["write", "create", "author"]
+  },
+  {
+    "id": 18,
+    "type": "Numeric Matrix",
+    "question": "Row 1: 3, 9, 27 | Row 2: 4, 16, ?",
+    "options": ["32", "48", "64", "80"],
+    "answer": "64",
+    "hint": "Look at the powers. 3 to the power of 1, 2, 3.",
+    "explanation": "Row 2 follows 4^1, 4^2, 4^3. 16 x 4 = 64.",
+    "keywords": ["multiply", "square", "cube"]
+  },
+  {
+    "id": 19,
+    "type": "Sentence Completion",
+    "question": "The politician’s speech was so ______ that many listeners left the hall feeling bored.",
+    "options": ["Eloquent", "Vibrant", "Tedious", "Concise"],
+    "answer": "Tedious",
+    "hint": "If people were 'bored,' was it exciting or dull?",
+    "explanation": "Tedious means too long or slow.",
+    "keywords": ["dull", "boring", "slow"]
+  },
+  {
+    "id": 20,
+    "type": "Verbal Classification",
+    "question": "Which word does not belong?",
+    "options": ["courage", "bravery", "valor", "wisdom"],
+    "answer": "wisdom",
+    "hint": "Three are about being bold; one is about knowing.",
+    "explanation": "Wisdom is knowledge; others are synonyms for courage.",
+    "keywords": ["brave", "smart", "knowledge"]
+  },
+  {
+    "id": 21,
+    "type": "Verbal Classification",
+    "question": "Which word is the 'odd one out'?",
+    "options": ["meticulous", "scrupulous", "careless", "conscientious"],
+    "answer": "careless",
+    "hint": "Three are about being careful.",
+    "explanation": "Careless is the antonym of the other words.",
+    "keywords": ["opposite", "antonym", "careful"]
+  },
+  {
+    "id": 22,
+    "type": "Arithmetic Reasoning",
+    "question": "A coat originally priced at $120 is on sale for 25% off. Price?",
+    "options": ["$80", "$90", "$95", "$100"],
+    "answer": "$90",
+    "hint": "What is one-fourth of 120? Subtract it.",
+    "explanation": "25% of 120 is 30. 120 - 30 = 90.",
+    "keywords": ["percent", "subtract", "discount"]
+  },
+  {
+    "id": 23,
+    "type": "Logical Selection",
+    "question": "Which of these is an essential part of a 'debate'?",
+    "options": ["microphone", "audience", "opposing points", "winner"],
+    "answer": "opposing points",
+    "hint": "Can you debate if everyone agrees?",
+    "explanation": "A debate requires a disagreement.",
+    "keywords": ["disagree", "oppose", "conflict"]
+  },
+  {
+    "id": 24,
+    "type": "Figural Analogy",
+    "question": "Small Square inside Circle : Circle inside Square. Apply to Triangle and Hexagon.",
+    "options": ["Hexagon inside Triangle", "Triangle beside Hexagon", "Large Triangle", "Two Triangles"],
+    "answer": "Hexagon inside Triangle",
+    "hint": "The inner and outer shapes swap places.",
+    "explanation": "The rule is to swap the positions of the shapes.",
+    "keywords": ["swap", "inside", "outside"]
+  },
+  {
+    "id": 25,
+    "type": "Number Series",
+    "question": "1, 4, 9, 16, 25, ?",
+    "options": ["30", "34", "36", "49"],
+    "answer": "36",
+    "hint": "Multiply numbers by themselves. 6x6?",
+    "explanation": "These are perfect squares: 1, 4, 9, 16, 25, 36.",
+    "keywords": ["square", "multiply", "sequence"]
+  },
+  {
+    "id": 26,
+    "type": "Sentence Completion",
+    "question": "The theory was so ______ that it took years to grasp its complexity.",
+    "options": ["elementary", "profound", "shallow", "redundant"],
+    "answer": "profound",
+    "hint": "If it took years to understand, was it simple or deep?",
+    "explanation": "Profound means of great depth.",
+    "keywords": ["deep", "complex", "profound"]
+  },
+  {
+    "id": 27,
+    "type": "Verbal Analogy",
+    "question": "Orchestra : Conductor :: Ship : —",
+    "options": ["Sailor", "Anchor", "Captain", "Engine"],
+    "answer": "Captain",
+    "hint": "Who is the leader of the ship?",
+    "explanation": "A conductor leads an orchestra; a captain leads a ship.",
+    "keywords": ["leader", "boss", "captain"]
+  },
+  {
+    "id": 28,
+    "type": "Arithmetic Reasoning",
+    "question": "If a printer prints 30 pages in 2 mins, how many in 5 mins?",
+    "options": ["60", "75", "90", "100"],
+    "answer": "75",
+    "hint": "Find pages per minute first.",
+    "explanation": "15 pages per minute. 15 x 5 = 75.",
+    "keywords": ["rate", "multiply", "time"]
+  },
+  {
+    "id": 29,
+    "type": "Figural Classification",
+    "question": "Which of these does not belong?",
+    "options": ["Sphere", "Cube", "Pyramid", "Rectangle"],
+    "answer": "Rectangle",
+    "hint": "Which one is flat (2D)?",
+    "explanation": "Rectangle is 2D; others are 3D.",
+    "keywords": ["3d", "2d", "solid"]
+  },
+  {
+    "id": 30,
+    "type": "Logical Selection",
+    "question": "A 'paradox' always involves —",
+    "options": ["a lie", "a contradiction", "a story", "a solution"],
+    "answer": "a contradiction",
+    "hint": "A statement that goes against itself.",
+    "explanation": "A paradox is a self-contradiction.",
+    "keywords": ["contradict", "logic", "clash"]
+  },
+  {
+    "id": 31,
+    "type": "Verbal Classification",
+    "question": "Which word does not belong?",
+    "options": ["minute", "second", "hour", "moment"],
+    "answer": "moment",
+    "hint": "Which is not an exact unit?",
+    "explanation": "Moment is indefinite; others are standard units.",
+    "keywords": ["unit", "measure", "exact"]
+  },
+  {
+    "id": 32,
+    "type": "Numeric Matrix",
+    "question": "Row 1: 12, 6, 3 | Row 2: 40, 20, ?",
+    "options": ["10", "5", "15", "8"],
+    "answer": "10",
+    "hint": "Divide by 2 repeatedly.",
+    "explanation": "40/2 = 20, 20/2 = 10.",
+    "keywords": ["divide", "half", "2"]
+  },
+  {
+    "id": 33,
+    "type": "Arithmetic Reasoning",
+    "question": "400 books. 15% mystery. How many are NOT mystery?",
+    "options": ["60", "300", "340", "385"],
+    "answer": "340",
+    "hint": "Subtract 15% from the total.",
+    "explanation": "15% of 400 is 60. 400 - 60 = 340.",
+    "keywords": ["percent", "subtract", "total"]
+  },
+  {
+    "id": 34,
+    "type": "Figural Series",
+    "question": "Fold a 2D net into a cube. Which face is opposite the star?",
+    "options": ["Circle", "Square", "Triangle", "Dot"],
+    "answer": "Square",
+    "hint": "Imagine folding the paper into a box.",
+    "explanation": "Spatial reasoning shows the square is opposite.",
+    "keywords": ["fold", "cube", "3d"]
+  },
+  {
+    "id": 35,
+    "type": "Sentence Completion",
+    "question": "The evidence was ______, so the jury said not guilty.",
+    "options": ["overwhelming", "inconclusive", "concrete", "abundant"],
+    "answer": "inconclusive",
+    "hint": "If they couldn't decide, was the proof strong?",
+    "explanation": "Inconclusive means no firm conclusion.",
+    "keywords": ["weak", "confusing", "proof"]
+  },
+  {
+    "id": 36,
+    "type": "Verbal Analogy",
+    "question": "Seed : Plant :: Egg : —",
+    "options": ["Bird", "Shell", "Breakfast", "Nest"],
+    "answer": "Bird",
+    "hint": "A seed grows into a plant; an egg grows into a...?",
+    "explanation": "It follows the lifecycle pattern.",
+    "keywords": ["grow", "start", "lifecycle"]
+  },
+  {
+    "id": 37,
+    "type": "Logical Selection",
+    "question": "A 'debate' is to 'argument' as 'agreement' is to —",
+    "options": ["conflict", "consensus", "discussion", "refusal"],
+    "answer": "consensus",
+    "hint": "A formal version of an agreement.",
+    "explanation": "Consensus is a formal, collective agreement.",
+    "keywords": ["formal", "synonym", "agree"]
+  },
+  {
+    "id": 38,
+    "type": "Number Series",
+    "question": "2, 3, 5, 8, 12, ?",
+    "options": ["15", "17", "18", "20"],
+    "answer": "17",
+    "hint": "The gap increases by 1 each time (+1, +2, +3, +4).",
+    "explanation": "12 + 5 = 17.",
+    "keywords": ["increase", "gap", "add"]
+  },
+  {
+    "id": 39,
+    "type": "Figural Analogy",
+    "question": "Left-facing Arrow : Right-facing Arrow :: Up-facing : ?",
+    "options": ["Up", "Down", "Left", "Right"],
+    "answer": "Down",
+    "hint": "It is a mirror image.",
+    "explanation": "The rule is horizontal or vertical reflection.",
+    "keywords": ["mirror", "reflect", "flip"]
+  },
+  {
+    "id": 40,
+    "type": "Verbal Classification",
+    "question": "Which is most like: Wheat, Rye, Barley?",
+    "options": ["Corn", "Bread", "Farmer", "Field"],
+    "answer": "Corn",
+    "hint": "They are all grains.",
+    "explanation": "Corn is a cereal grain like the others.",
+    "keywords": ["category", "grain", "food"]
+  },
+  {
+    "id": 41,
+    "type": "Verbal Classification",
+    "question": "Which word does not belong?",
+    "options": ["innovate", "create", "duplicate", "originate"],
+    "answer": "duplicate",
+    "hint": "Which one is a copy?",
+    "explanation": "Duplicate means copy; others mean create new.",
+    "keywords": ["new", "copy", "original"]
+  },
+  {
+    "id": 42,
+    "type": "Arithmetic Reasoning",
+    "question": "60 mph for 3 hrs, 80 mph for 2 hrs. Total distance?",
+    "options": ["300", "320", "340", "400"],
+    "answer": "340",
+    "hint": "Speed x Time = Distance. Add both parts.",
+    "explanation": "180 + 160 = 340.",
+    "keywords": ["distance", "speed", "total"]
+  },
+  {
+    "id": 43,
+    "type": "Logical Selection",
+    "question": "A 'concert' always has —",
+    "options": ["orchestra", "stage", "sound", "conductor"],
+    "answer": "sound",
+    "hint": "Can you have a concert with no noise?",
+    "explanation": "Music requires sound.",
+    "keywords": ["essential", "music", "noise"]
+  },
+  {
+    "id": 44,
+    "type": "Figural Analogy",
+    "question": "Circle with 4 dots : Square with ?",
+    "options": ["4 dots", "1 square", "Empty", "Solid"],
+    "answer": "4 dots",
+    "hint": "The inside stays the same.",
+    "explanation": "The rule is to change the container, not the content.",
+    "keywords": ["container", "inside", "stay"]
+  },
+  {
+    "id": 45,
+    "type": "Number Series",
+    "question": "100, 95, 85, 70, 50, ?",
+    "options": ["30", "25", "20", "15"],
+    "answer": "25",
+    "hint": "Subtract 5, then 10, then 15, then 20...",
+    "explanation": "50 - 25 = 25.",
+    "keywords": ["subtract", "increasing", "minus"]
+  },
+  {
+    "id": 46,
+    "type": "Sentence Completion",
+    "question": "Supporters expected aggression, but were surprised by her ______ behavior.",
+    "options": ["bellicose", "placid", "hostile", "energetic"],
+    "answer": "placid",
+    "hint": "What is the opposite of aggressive?",
+    "explanation": "Placid means calm.",
+    "keywords": ["calm", "opposite", "peaceful"]
+  },
+  {
+    "id": 47,
+    "type": "Verbal Analogy",
+    "question": "Fragile : Break :: Flexible : —",
+    "options": ["Snap", "Bend", "Stretch", "Rigid"],
+    "answer": "Bend",
+    "hint": "Flexible things do this.",
+    "explanation": "It describes the property action.",
+    "keywords": ["bend", "move", "action"]
+  },
+  {
+    "id": 48,
+    "type": "Arithmetic Reasoning",
+    "question": "Avg of 3 numbers is 20. Two are 15 and 25. Third?",
+    "options": ["10", "15", "20", "25"],
+    "answer": "20",
+    "hint": "The total sum must be 60.",
+    "explanation": "60 - (15 + 25) = 20.",
+    "keywords": ["average", "total", "sum"]
+  },
+  {
+    "id": 49,
+    "type": "Figural Series",
+    "question": "A dot moves one corner counter-clockwise. Where is it next?",
+    "options": ["Top Left", "Top Right", "Bottom Left", "Bottom Right"],
+    "answer": "Bottom Left",
+    "hint": "Follow the perimeter movement.",
+    "explanation": "The pattern moves corner to corner.",
+    "keywords": ["corner", "move", "counter-clockwise"]
+  },
+  {
+    "id": 50,
+    "type": "Logical Selection",
+    "question": "A 'metropolis' must always have —",
+    "options": ["subway", "skyscrapers", "large population", "mayor"],
+    "answer": "large population",
+    "hint": "Definition of a metropolis.",
+    "explanation": "It is defined by size and population.",
+    "keywords": ["people", "large", "city"]
+  },
+  {
+    "id": 51,
+    "type": "Verbal Classification",
+    "question": "Which word is the 'odd one out'?",
+    "options": ["justify", "advocate", "defend", "oppose"],
+    "answer": "oppose",
+    "hint": "Which one is against?",
+    "explanation": "Oppose is the antonym of the others.",
+    "keywords": ["against", "opposite", "disagree"]
+  },
+  {
+    "id": 52,
+    "type": "Arithmetic Reasoning",
+    "question": "Perimeter is 30. Length is 10. Width?",
+    "options": ["5", "10", "15", "20"],
+    "answer": "5",
+    "hint": "P = 2L + 2W.",
+    "explanation": "30 - 20 = 10. 10/2 = 5.",
+    "keywords": ["perimeter", "rectangle", "divide"]
+  },
+  {
+    "id": 53,
+    "type": "Logical Selection",
+    "question": "A 'purchase' always requires —",
+    "options": ["credit card", "store", "exchange", "receipt"],
+    "answer": "exchange",
+    "hint": "Giving value for goods.",
+    "explanation": "A purchase is an exchange of value.",
+    "keywords": ["exchange", "trade", "money"]
+  },
+  {
+    "id": 54,
+    "type": "Figural Analogy",
+    "question": "Large Shape / Small Inside : Small Shape / Large Inside.",
+    "options": ["Swap sizes", "Keep same", "Remove inside", "Solid color"],
+    "answer": "Swap sizes",
+    "hint": "The big becomes small and vice versa.",
+    "explanation": "This is a size inversion rule.",
+    "keywords": ["size", "invert", "swap"]
+  },
+  {
+    "id": 55,
+    "type": "Number Series",
+    "question": "1, 3, 7, 15, 31, ?",
+    "options": ["45", "50", "63", "64"],
+    "answer": "63",
+    "hint": "The gap doubles: +2, +4, +8, +16...",
+    "explanation": "31 + 32 = 63.",
+    "keywords": ["double", "add", "sequence"]
+  },
+  {
+    "id": 56,
+    "type": "Sentence Completion",
+    "question": "The ______ weather forced hikers to seek shelter.",
+    "options": ["temperate", "adverse", "predictable", "stagnant"],
+    "answer": "adverse",
+    "hint": "Hazardous conditions.",
+    "explanation": "Adverse means harmful or unfavorable.",
+    "keywords": ["bad", "dangerous", "hostile"]
+  },
+  {
+    "id": 57,
+    "type": "Verbal Analogy",
+    "question": "Thirst : Drink :: Fatigue : —",
+    "options": ["Water", "Rest", "Energy", "Run"],
+    "answer": "Rest",
+    "hint": "What solves fatigue?",
+    "explanation": "Problem-solution relationship.",
+    "keywords": ["solve", "need", "rest"]
+  },
+  {
+    "id": 58,
+    "type": "Arithmetic Reasoning",
+    "question": "Dozen eggs cost $3.60. One egg cost?",
+    "options": ["$0.20", "$0.25", "$0.30", "$0.35"],
+    "answer": "$0.30",
+    "hint": "Divide by 12.",
+    "explanation": "3.60 / 12 = 0.30.",
+    "keywords": ["divide", "unit", "dozen"]
+  },
+  {
+    "id": 59,
+    "type": "Figural Classification",
+    "question": "Which shape is the 'odd one out'?",
+    "options": ["Pentagon", "Hexagon", "Octagon", "Cylinder"],
+    "answer": "Cylinder",
+    "hint": "Which is 3D and curved?",
+    "explanation": "Cylinder is 3D; others are 2D polygons.",
+    "keywords": ["3d", "flat", "curve"]
+  },
+  {
+    "id": 60,
+    "type": "Logical Selection",
+    "question": "A 'debate' must always involve —",
+    "options": ["audience", "moderator", "two or more people", "podium"],
+    "answer": "two or more people",
+    "hint": "Can't debate alone.",
+    "explanation": "Requires at least two participants.",
+    "keywords": ["people", "two", "talk"]
+  },
+  {
+    "id": 61,
+    "type": "Verbal Classification",
+    "question": "Which word does not belong?",
+    "options": ["persistent", "resolute", "dogmatic", "tenacious"],
+    "answer": "dogmatic",
+    "hint": "Which one is about stubborn opinions?",
+    "explanation": "Dogmatic implies narrow-mindedness; others are positive perseverance.",
+    "keywords": ["stubborn", "opinion", "negative"]
+  },
+  {
+    "id": 62,
+    "type": "Arithmetic Reasoning",
+    "question": "240 miles on 8 gal. How many for 600 miles?",
+    "options": ["15", "18", "20", "22"],
+    "answer": "20",
+    "hint": "Find MPG first.",
+    "explanation": "30 MPG. 600 / 30 = 20.",
+    "keywords": ["divide", "mpg", "gas"]
+  },
+  {
+    "id": 63,
+    "type": "Logical Selection",
+    "question": "An 'innovation' must always involve —",
+    "options": ["technology", "patent", "something new", "money"],
+    "answer": "something new",
+    "hint": "Definition of innovation.",
+    "explanation": "Innovation requires novelty.",
+    "keywords": ["new", "novel", "change"]
+  },
+  {
+    "id": 64,
+    "type": "Figural Analogy",
+    "question": "Reflection is to Rotation as Flip is to —",
+    "options": ["Turn", "Mirror", "Slide", "Stay"],
+    "answer": "Turn",
+    "hint": "Mapping movement types.",
+    "explanation": "Relates linear change to angular change.",
+    "keywords": ["rotate", "geometry", "turn"]
+  },
+  {
+    "id": 65,
+    "type": "Number Series",
+    "question": "100, 10, 1, 0.1, ?",
+    "options": ["0.01", "0.001", "0", "-1"],
+    "answer": "0.01",
+    "hint": "Divide by 10 each time.",
+    "explanation": "0.1 / 10 = 0.01.",
+    "keywords": ["decimal", "divide", "10"]
+  },
+  {
+    "id": 66,
+    "type": "Sentence Completion",
+    "question": "The ______ of the ruins was so complete that layout was lost.",
+    "options": ["preservation", "devastation", "construction", "embellishment"],
+    "answer": "devastation",
+    "hint": "Total destruction.",
+    "explanation": "Devastation explains the lost layout.",
+    "keywords": ["destroy", "broken", "ruin"]
+  },
+  {
+    "id": 67,
+    "type": "Verbal Analogy",
+    "question": "Altruistic : Selfish :: Candid : —",
+    "options": ["Honest", "Deceptive", "Clear", "Brave"],
+    "answer": "Deceptive",
+    "hint": "Opposite of honest.",
+    "explanation": "Antonym relationship.",
+    "keywords": ["opposite", "antonym", "lie"]
+  },
+  {
+    "id": 68,
+    "type": "Arithmetic Reasoning",
+    "question": "Clock loses 5 mins per hour. Time at 6 PM if set at 12 PM?",
+    "options": ["5:30", "5:35", "5:45", "5:55"],
+    "answer": "5:30",
+    "hint": "Multiply 6 hrs by 5 mins.",
+    "explanation": "Loses 30 mins total.",
+    "keywords": ["subtract", "time", "lose"]
+  },
+  {
+    "id": 69,
+    "type": "Figural Series",
+    "question": "Triangle, Square, Pentagon, ?",
+    "options": ["Hexagon", "Circle", "Line", "Dot"],
+    "answer": "Hexagon",
+    "hint": "Add one side.",
+    "explanation": "Series follows n+1 sides.",
+    "keywords": ["sides", "add", "polygon"]
+  },
+  {
+    "id": 70,
+    "type": "Logical Selection",
+    "question": "A 'symphony' always includes —",
+    "options": ["singer", "instruments", "piano", "lyrics"],
+    "answer": "instruments",
+    "hint": "Orchestral requirement.",
+    "explanation": "A symphony is an instrumental composition.",
+    "keywords": ["music", "orchestra", "play"]
+  },
+  {
+    "id": 71,
+    "type": "Numeric Matrix",
+    "question": "Row 1: 2, 5, 11 | Row 2: 7, 15, 31 | Row 3: 4, 9, ?",
+    "options": ["13", "18", "19", "21"],
+    "answer": "19",
+    "hint": "Rule is 2x + 1.",
+    "explanation": "9 x 2 + 1 = 19.",
+    "keywords": ["multiply", "add", "logic"]
+  },
+  {
+    "id": 72,
+    "type": "Verbal Classification",
+    "question": "Which is most like: Rectangle, Square, Trapezoid?",
+    "options": ["Circle", "Triangle", "Rhombus", "Cube"],
+    "answer": "Rhombus",
+    "hint": "4-sided flat shapes.",
+    "explanation": "All are quadrilaterals.",
+    "keywords": ["sides", "four", "category"]
+  }
+]
